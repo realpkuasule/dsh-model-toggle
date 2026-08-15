@@ -32,7 +32,7 @@ install.sh         一键安装：本机或 SSH 远程（mbp / m4 / m2）
 
 - 依赖 DSH web profile 标准布局（`~/.dsh/profiles/web/`）与标准包（`dsh-api-remotes`、`dsh-client-connection`、`dsh-client-ui-slots` 等，随 dsh 发行自带）
 - 与 DSH 版本耦合的接口：`conversation.input.right` slot、`sessions.models/selectModel` wire、`__ModuleLoader__` 客户端装载格式。跨版本升级后如按钮失效，先检查这三处签名
-- 目标机器 `pnpm` 需可用（install 脚本 offline 优先，失败自动转联网）
+- 目标机器**无需 pnpm**：脚本优先 pnpm（offline→online），没有则自动改为手动 symlink（等价 hoisted 布局）
 
 ## 临时替代（不装包也能用）
 
