@@ -1,0 +1,38 @@
+{
+  "schema": "dsh-layout/1",
+  "profile": "custom",
+  "name": "dsh-model-toggle",
+  "created": "2026-11-13T16:19:01+09:00",
+  "roles": {
+    "core": "package",
+    "tools": "tools"
+  },
+  "required_root": [
+    "README.md",
+    "AGENTS.md",
+    ".gitignore",
+    "TASK.json",
+    "CHANGELOG.jsonl",
+    ".dsh-layout.json"
+  ],
+  "root_files": [
+    "install.sh",
+    "wire.sh"
+  ],
+  "dir_readmes": [],
+  "tracking": {
+    "deliverables_mode": "tracked",
+    "ignore_globs": [
+      "node_modules/",
+      ".venv/",
+      "dist/",
+      "build/",
+      "out/",
+      "coverage/",
+      ".next/",
+      "target/",
+      ".pytest_cache/",
+      "__pycache__/"
+    ]
+  }
+}
